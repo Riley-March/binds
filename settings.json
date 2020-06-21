@@ -1,0 +1,28 @@
+{
+    "editor.fontSize": 18,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.scrollback": 100000,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "browser-preview.startUrl": "http://localhost:3000",
+    "browser-preview.chromeExecutable": "C:\\Program Files (x86)\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+    "explorer.confirmDragAndDrop": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "cSpell.userWords": [
+        "Centos",
+        "Ramtek",
+        "groovin",
+        "moshtix",
+        "splendour",
+        "splendy",
+        "webpush"
+    ],
+    "python.jediEnabled": false,
+    "workbench.colorTheme": "Dracula"
+}
