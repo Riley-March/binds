@@ -1,12 +1,12 @@
 {
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.minimap.enabled": false,
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontWeight": "bold",
     "terminal.integrated.scrollback": 100000,
     "git.confirmSync": false,
     "git.autofetch": true,
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.iconTheme": "vscode-icons",
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
     "browser-preview.startUrl": "http://localhost:3000",
@@ -24,5 +24,7 @@
         "webpush"
     ],
     "python.jediEnabled": false,
-    "workbench.colorTheme": "Dracula"
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": "monospace"
 }
