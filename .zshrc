@@ -114,6 +114,7 @@ alias ramfront="ssh riley@157.230.132.172"
 alias ramback="ssh riley@165.227.24.164"
 alias ramdata="ssh riley@167.99.97.206"
 alias journal-demo-1="ssh riley@167.71.145.172"
+alias rampress="ssh riley@64.227.81.221"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
