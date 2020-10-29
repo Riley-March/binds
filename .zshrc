@@ -8,12 +8,6 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-if which tmux 2>&1 >/dev/null; then
-  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-    tmux attach -t dev || tmux new -s dev; exit
-  fi
-fi
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/riley/.oh-my-zsh"
 
@@ -113,11 +107,15 @@ source $ZSH/oh-my-zsh.sh
 alias ramfront="ssh riley@157.230.132.172"
 alias ramback="ssh riley@165.227.24.164"
 alias ramdata="ssh riley@167.99.97.206"
-alias journal-demo-1="ssh riley@167.71.145.172"
+alias journal-demo="ssh riley@167.71.145.172"
 alias rampress="ssh riley@64.227.81.221"
+alias ramdev="ssh riley@192.168.86.45"
+alias rambox="ssh riley@192.168.86.100"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export TERM=xterm-256color
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
