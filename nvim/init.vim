@@ -33,9 +33,6 @@ let g:airline_theme='dracula'
 " Removes annoying background color in ts syntax
 let g:dracula_italic = 0
 
-" Allow html syntax highlighting in tsx
-let g:vim_jsx_pretty_disable_tsx = 1
-
 " Allows syntax highlighting to not get out of sync
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
