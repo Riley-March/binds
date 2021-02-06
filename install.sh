@@ -7,4 +7,3 @@ ln -sf "$PWD"/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf "$PWD"/zsh/.zshrc ~/.zshrc
 
 source ~/.zshrc
-source ~/.config/nvim/init.vim
