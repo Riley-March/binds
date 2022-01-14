@@ -22,13 +22,14 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'mattn/emmet-vim'
+Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
 
 " Set the terminal colors
-if (has("termguicolors"))
-    set termguicolors
-endif
 let g:airline_theme='dracula'
 
 " Removes annoying background color in ts syntax
@@ -70,12 +71,17 @@ set incsearch
 set splitbelow
 set splitright
 set rtp+=/usr/local/opt/fzf
+set wildignore+=**/node_modules/**
 
 " Keybindings
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 inoremap jj <ESC>
-nnoremap <C-p> :GFiles<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-p> :FZF<CR>
 nnoremap <silent> K :call CocAction('doHover')<CR>
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
